@@ -130,7 +130,8 @@
         padding: 15px 20px;
         border: none;
         border-radius: 50%;
-        display: none;
+        /* display: none; */
+        pointer-events: none;
         cursor: pointer;
         opacity: 0;
         transition: opacity 0.5s ease, transform 0.3s ease;
@@ -138,7 +139,8 @@
       }
 
       #backToTop.show {
-        display: block;
+        /* display: block; */
+        pointer-events: all;
         opacity: 1;
       }
 
@@ -275,23 +277,23 @@
 
       showSlides();
 
-      window.onscroll = function () {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("backToTop").style.display = "block";
-        } else {
-          document.getElementById("backToTop").style.display = "none";
-        }
-      };
+      // window.onscroll = function () {
+      //   if (
+      //     document.body.scrollTop > 20 ||
+      //     document.documentElement.scrollTop > 20
+      //   ) {
+      //     document.getElementById("backToTop").style.display = "block";
+      //   } else {
+      //     document.getElementById("backToTop").style.display = "none";
+      //   }
+      // };
 
-      document.getElementById("backToTop").onclick = function () {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      };
+      // document.getElementById("backToTop").onclick = function () {
+      //   document.body.scrollTop = 0;
+      //   document.documentElement.scrollTop = 0;
+      // };
     </script>
 
-    <script src="js/navigation.js"></script>
+    <script src="navigation.js"></script>
   </body>
 </html>

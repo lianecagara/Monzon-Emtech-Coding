@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Top 3 Favorite Books</title>
+
+    <style>
+      nav {
+        background-color: #333;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a:hover {
+        color: #000000;
+        font-weight: bold;
+        font-style: italic;
+      }
+      nav ul li a:active {
+        color: #000000;
+        font-weight: bold;
+        font-style: italic;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #78ff0a;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, color 0.3s ease,
+          transform 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #fff;
+        background-color: #4caf50;
+        font-weight: bold;
+        font-style: italic;
+        transform: scale(1.1);
+      }
+
+      nav ul li a.active {
+        color: #fff;
+        background-color: #4caf50;
+        font-weight: bold;
+        font-style: italic;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+      }
+      section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #2c3e50;
+      }
+      .book {
+        margin-bottom: 20px;
+      }
+      .book img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #34495e;
+        color: #ecf0f1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Top 3 Favorite Books</h1>
+      <p>
+        These books have deeply influenced my thoughts and perspectives on life.
+      </p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">CLICK TO GO BACK</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <article class="book">
+        <h2>1. Meditations by Marcus Aurelius</h2>
+        <img src="images/marcus.jfif" alt="Meditations Book Cover" />
+        <p>
+          This timeless collection of reflections by the Roman Emperor Marcus
+          Aurelius offers profound insights into Stoicism, self-discipline, and
+          living a virtuous life. It’s a guiding light for introspection and
+          resilience.
+        </p>
+      </article>
+
+      <article class="book">
+        <h2>2. The Daily Stoic by Ryan Holiday</h2>
+        <img src="images/daily.webp" alt="The Daily Stoic Book Cover" />
+        <p>
+          Ryan Holiday provides daily meditations that are rooted in Stoic
+          philosophy. This book combines ancient wisdom with practical lessons,
+          making it a perfect companion for cultivating mindfulness and clarity
+          in everyday life.
+        </p>
+      </article>
+
+      <article class="book">
+        <h2>3. The 48 Laws of Power by Robert Greene</h2>
+        <img src="images/48.png" />
+        <p>
+          A compelling guide to understanding power dynamics and strategies for
+          achieving success. Robert Greene’s work combines historical anecdotes
+          with actionable advice, making it a must-read for navigating
+          relationships and leadership.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; Enzo Monzon Emtech</p>
+    </footer>
+  </body>
+</html>

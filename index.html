@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/f5.jpg" />
+    <link rel="stylesheet" href="Css.css" />
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(images/bg.webp);
+        background-position: center;
+        color: #ffffff;
+      }
+
+      header {
+        background-image: url(images/bgpic.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+
+      nav {
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #000000;
+      }
+
+      section {
+        padding: 60px 20px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 700;
+      }
+
+      section h2 {
+        font-size: 2rem;
+        color: #ff0bbe;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      section p {
+        font-size: 1rem;
+        color: #ffffff;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .mySlides {
+        display: none;
+        width: 100%;
+      }
+
+      .mySlides.active {
+        display: block;
+      }
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .dot.active {
+        background-color: #717171;
+      }
+
+      #backToTop {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 50%;
+        display: none;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.5s ease, transform 0.3s ease;
+        font-size: 18px;
+      }
+
+      #backToTop.show {
+        display: block;
+        opacity: 1;
+      }
+
+      #backToTop:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+      }
+
+      #backToTop:active {
+        transform: scale(0.9);
+      }
+
+      @media (max-width: 768px) {
+        nav ul li {
+          display: block;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Emtech Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="https://sites.google.com/bene.edu.ph/monzon/about"
+            target="_blank"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a href="  https://cinnamonbites6.wordpress.com/" target="_blank"
+            >Store</a
+          >
+        </li>
+        <li>
+          <a
+            href="  https://monzon2290.wixsite.com/cinnamon-bites"
+            target="_blank"
+            >Friends</a
+          >
+        </li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Know something about me where i used google sites!</p>
+    </section>
+
+    <section id="store">
+      <h2>Store</h2>
+      <p>Check out the Cinnamon Bites store i used wordpress!</p>
+    </section>
+
+    <section id="friends">
+      <h2>Friends</h2>
+      <p>Check out this gallery of my circles where i used wix!</p>
+    </section>
+
+    <section id="books">
+      <h2>Books</h2>
+      <p>Check out the favorite books i read</p>
+    </section>
+
+    <section id="socials">
+      <h2>Socials</h2>
+      <p>Here's my social media. You can follow me!</p>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="images/Instagram.jpg"
+            alt="Social Image 1"
+            style="width: 80%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="images/facebook.jpg"
+            alt="Social Image 2"
+            style="width: 80%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="images/youtube.jpg"
+            alt="Social Image 3"
+            style="width: 80%"
+          />
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <button id="backToTop">Back to Top</button>
+
+    <script>
+      let slideIndex = 0;
+
+      function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].classList.remove("active");
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].classList.add("active");
+        dots[slideIndex - 1].classList.add("active");
+
+        setTimeout(showSlides, 3000);
+      }
+
+      showSlides();
+
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("backToTop").style.display = "block";
+        } else {
+          document.getElementById("backToTop").style.display = "none";
+        }
+      };
+
+      document.getElementById("backToTop").onclick = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      };
+    </script>
+
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

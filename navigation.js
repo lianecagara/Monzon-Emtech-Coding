@@ -1,10 +1,19 @@
 document.querySelectorAll("nav ul li a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    try {
+      const i = anchor.getAttribute("href");
+      if (i.startsWith("#")) {
+        document.querySelector(i).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      } else {
+        window.open(i);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   });
 });
 
